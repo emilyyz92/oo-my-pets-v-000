@@ -37,10 +37,10 @@ class Owner
 
   def buy_dog (dog_name)
     new_dogpet = Dog.all.find{|dog|dog.name == dog_name}
-    if new_fishpet == nil
-      new_fishpet = Fish.new(fish_name)
+    if new_doghpet == nil
+      new_dogpet = Dog.new(dog_name)
     end
-    @pets[:fishes] << new_fishpet
+    @pets[:dogs] << new_fishpet
   end
 
 end
