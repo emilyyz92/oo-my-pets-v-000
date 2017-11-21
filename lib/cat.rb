@@ -6,6 +6,7 @@ class Cat
   def initialize(name)
     @name = name
     @mood = "nervous"
+    @@all_cat<<self
   end
 
   def mood=(mood)
