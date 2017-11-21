@@ -31,6 +31,7 @@ class Owner
     new_fishpet = Fish.all.find{|fish|fish.name == fish_name}
     if new_fishpet == nil
       new_fishpet = Fish.new(fish_name)
+    end
     @pets[:fishes] << new_fishpet
   end
 
