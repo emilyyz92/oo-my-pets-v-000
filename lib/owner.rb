@@ -40,7 +40,7 @@ class Owner
     if new_dogpet == nil
       new_dogpet = Dog.new(dog_name)
     end
-    @pets[:dogs] << new_doghpet
+    @pets[:dogs] << new_dogpet
   end
 
 end
