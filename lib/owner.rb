@@ -29,6 +29,8 @@ class Owner
 
   def buy_fish (fish_name)
     new_fishpet = Fish.all.find{|fish|fish.name == fish_name}
+    if new_fishpet == nil
+      new_fishpet = Fish.new(fish_name)
     @pets[:fishes] << new_fishpet
   end
 
