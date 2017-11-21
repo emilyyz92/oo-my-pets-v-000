@@ -67,5 +67,6 @@ class Owner
     @@all.map! do |species,pets|
       pets.clear
     end
+  end
 
 end
