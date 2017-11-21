@@ -43,7 +43,7 @@ class Owner
     @pets[:dogs] << new_dogpet
   end
 
-  def buy_dog (dog_name)
+  def buy_cat (cat_name)
     new_dogpet = Dog.all.find{|dog|dog.name == dog_name}
     if new_dogpet == nil
       new_dogpet = Dog.new(dog_name)
