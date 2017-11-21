@@ -43,4 +43,12 @@ class Owner
     @pets[:dogs] << new_dogpet
   end
 
+  def buy_dog (dog_name)
+    new_dogpet = Dog.all.find{|dog|dog.name == dog_name}
+    if new_dogpet == nil
+      new_dogpet = Dog.new(dog_name)
+    end
+    @pets[:dogs] << new_dogpet
+  end
+
 end
