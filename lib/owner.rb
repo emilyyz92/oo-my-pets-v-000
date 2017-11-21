@@ -23,7 +23,7 @@ class Owner
   end
 
   def say_species
-    #say_it = @species
+    say_it = @species
     return "I am a #{say_it}."
   end
 
