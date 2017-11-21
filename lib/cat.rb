@@ -3,6 +3,7 @@ class Cat
   attr_reader :name
 
   @@all_cat = []
+  
   def initialize(name)
     @name = name
     @mood = "nervous"
