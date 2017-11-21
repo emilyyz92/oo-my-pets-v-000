@@ -69,7 +69,7 @@ class Owner
         pet.mood = "nervous"
       end
     end
-    @@all.map! do |species,pets|
+    @pets.map! do |species,pets|
       pets.clear
     end
   end
