@@ -36,7 +36,7 @@ class Owner
   end
 
   def buy_dog (dog_name)
-    new_fishpet = Fish.all.find{|fish|fish.name == fish_name}
+    new_dogpet = Dog.all.find{|dog|dog.name == dog_name}
     if new_fishpet == nil
       new_fishpet = Fish.new(fish_name)
     end
