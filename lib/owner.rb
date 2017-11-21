@@ -64,7 +64,7 @@ class Owner
   end
 
   def sell_pets
-    @@all.collect! do |species,pets|
+    @@all.map! do |species,pets|
       pets.clear
     end
 
